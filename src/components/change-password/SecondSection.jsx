@@ -1,8 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styles from './ChangePasswordSection.module.scss';
 import axios from 'axios';
-import env from '../../env';
-
+const env = require('../../env.js');
 const SecondSection = ({textInput, setStatus, email}) => {
     const [error, setError] = useState(false);
 

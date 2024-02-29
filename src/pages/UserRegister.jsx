@@ -16,9 +16,9 @@ import { useSnackbar } from "notistack";
 import { useNavigate } from "react-router-dom";
 import { useLocation, useSearchParams } from "react-router-dom";
 import axios from "axios";
-import env from "../env";
-import routes from "../router/routes";
 
+import routes from "../router/routes";
+const env = require('../env.js');
 
 const UserRegister = () => {
     const { enqueueSnackbar } = useSnackbar();

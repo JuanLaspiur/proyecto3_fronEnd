@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
-import env from '../../env';
+const env = require('../../env.js')
 import { useSnackbar } from 'notistack';
 
 const ThirdSection = ({ textInput, email, setStatus }) => {

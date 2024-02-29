@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import env from '../../env';
-
+const env = require('../../env.js');
 const FirstSection = ({setEmail, textInput, email, setUserImage, setStatus, setUserId, setLoading, error, setError}) => {
     const handleSend = (e) => {
         setLoading(true);
