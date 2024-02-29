@@ -1,0 +1,60 @@
+.reactPaginate {
+  display: flex;
+  border-radius: 10;
+  margin: 5 auto;
+  justify-content: center;
+  align-items: center;
+}
+.previousPag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.previousLinkPag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+}
+.nextPag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.nextLinkPag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+}
+.breakPag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.activePag {
+  font-weight: 500;
+}
+.pagePag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.29);
+  border-radius: 5px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.pageLinkPag {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
