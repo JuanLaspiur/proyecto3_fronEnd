@@ -1,8 +1,8 @@
 import axios from "axios";
-const env = require('../env.js');
-//
+const API_URL= "https://proyecto3-back.onrender.com/api"; //mal importada
+
 const backendApi = axios.create({
-  baseURL: env.API_URL,
+  baseURL: API_URL,
 });
 
 backendApi.interceptors.request.use((config) => {

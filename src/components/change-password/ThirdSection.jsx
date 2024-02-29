@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
-const env = require('../../env.js')
+const API_URL= "https://proyecto3-back.onrender.com/api"; //mal importada
 import { useSnackbar } from 'notistack';
 
 const ThirdSection = ({ textInput, email, setStatus }) => {
@@ -13,7 +13,7 @@ const ThirdSection = ({ textInput, email, setStatus }) => {
         e.preventDefault(e);
         if (password.current.value !== validatePassword.current.value) return enqueueSnackbar('Las contraseñas no coinciden', { variant: 'error' });
 
-        axios.put(`${env.API_URL}/changePassword`, {
+        axios.put(`${API_URL}/changePassword`, {
             newPassword: password.current.value,
             email: email
         })

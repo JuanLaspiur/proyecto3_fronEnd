@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styles from './ChangePasswordSection.module.scss';
 import axios from 'axios';
-const env = require('../../env.js');
+const API_URL= "https://proyecto3-back.onrender.com/api"; //mal importada
 const SecondSection = ({textInput, setStatus, email}) => {
     const [error, setError] = useState(false);
 
@@ -23,7 +23,7 @@ const SecondSection = ({textInput, setStatus, email}) => {
             code.push(element);
         }
 
-        axios.post(`${env.API_URL}/changePassword/verifyCode`, {email: email, code: code.join('')})
+        axios.post(`${API_URL}/changePassword/verifyCode`, {email: email, code: code.join('')})
             .then(res => {
                 setStatus(2);
             })

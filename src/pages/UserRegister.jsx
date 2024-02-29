@@ -18,7 +18,7 @@ import { useLocation, useSearchParams } from "react-router-dom";
 import axios from "axios";
 
 import routes from "../router/routes";
-const env = require('../env.js');
+const API_URL= "https://proyecto3-back.onrender.com/api"; //mal importada
 
 const UserRegister = () => {
     const { enqueueSnackbar } = useSnackbar();
@@ -62,7 +62,7 @@ const UserRegister = () => {
             return;
         }
 
-        axios.post(`${env.API_URL}/user/employee/register`, form)
+        axios.post(`${API_URL}/user/employee/register`, form)
             .then((response) => {
                 enqueueSnackbar("Empleado registrado.", { variant: "success" });
                 navigate(routes.login);

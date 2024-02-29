@@ -1,5 +1,5 @@
 const routes = {
-  login: "/",
+  login: "",
   register: "/register",
   recovery: "/password_recovery",
   linkDiscord: "/enlazar_discord",

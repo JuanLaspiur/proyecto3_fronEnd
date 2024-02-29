@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const env = require('../../env.js');
+//const env = require('../../env.js');
+const API_URL= "https://proyecto3-back.onrender.com/api"; //mal importada
 const FirstSection = ({setEmail, textInput, email, setUserImage, setStatus, setUserId, setLoading, error, setError}) => {
     const handleSend = (e) => {
         setLoading(true);
         e.preventDefault();
 
-        axios.post(`${env.API_URL}/changePassword`, {
+        axios.post(`${API_URL}/changePassword`, {
             email: email
         })
             .then(res => {
